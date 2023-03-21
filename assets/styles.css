@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+i{
+    font-size: xx-large;
+}
+
+img{
+    border-radius: 15px;
+}
+
+h4{
+   color:#d63384 ;
+}
+
+.img-fit{
+    height: 200px;
+    object-fit: cover;
+}
+
+.presentation{
+    color:blueviolet;
+    display:flex;
+    justify-content: center;
+}
+
+
+main{
+    min-height: 90vh;
+    background-color: lightgray;
+}
+
+.bi-instagram{
+    color: rgb(235, 47, 216);
+}
+
+.bi-facebook{
+    color: blue;
+}
+
+.bi-whatsapp{
+    color: green;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    margin-top: auto;
+}
+
+
+
+
+/* The meddia querys just in case
+}
+@media only screen and (min-width: 375px) {
+    *{
+    background-color: aqua;
+    }
+    i{
+    font-size: large;
+}
+@media only screen and (min-width: 768px) {
+    *{
+    background-color: blueviolet;
+        
+    }
+}
+
+
+
+@media only screen and (min-width: 1440px) {
+    *{
+        background-color: lightslategray;
+    }
+}
+*/
+
