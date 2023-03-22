@@ -4,23 +4,23 @@ async function printCategories() {
     let response = await fetchResponse.json();
     let arrayEventos = response.events;
 
-    let categories = [];
+    let categorias = [];
     for (let evento of arrayEventos) {
-        if (!categories.includes(evento.category)) {
-            categories.push(evento.category);
+        if (!categorias.includes(evento.category)) {
+            categorias.push(evento.category);
         }
     }
 
-    let htmlCategories = [];
+    let categoriasHTML = [];
     let htmlCat;
-    for (let category of categories) {
+    for (let category of categorias) {
         htmlCat = `<div>
                         <input class="categoria" onclick="filtrar()" type="checkbox" id="${category}" value="${category}">
                         <label for="${category}">${category}</label>
                     </div>`
-        htmlCategories.push(htmlCat);
+        categoriasHTML.push(htmlCat);
     }
-    document.getElementById("categories").innerHTML = htmlCategories.join("");
+    document.getElementById("categories").innerHTML = categoriasHTML.join("");
 }
 
 printCategories();

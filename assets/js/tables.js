@@ -114,6 +114,8 @@ async function tabla3() {
                     <td>$${ganancia}</td>
                     <td>${porcentajeAsist}%</td>
                     </tr>`;
+
+                    
         rows.push(row);
     }
     document.getElementById("tabla3").innerHTML += rows.join("");
